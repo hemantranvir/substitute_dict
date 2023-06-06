@@ -1,0 +1,36 @@
+{
+    "first": {
+        "_content": 1,
+        "_type": "<class 'int'>"
+    },
+    "second": {
+        "_content": "2",
+        "_type": "<class 'str'>"
+    },
+    "third": {
+        "third-first": {
+            "_content": 31,
+            "_type": "<class 'int'>"
+        },
+        "third-second": {
+            "_content": 32,
+            "_type": "<class 'int'>"
+        }
+    },
+    "fourth": {
+        "fourth-first": {
+            "_content": 41,
+            "_type": "<class 'int'>"
+        },
+        "fourth-second": {
+            "fourth-second-first": {
+                "_content": 421,
+                "_type": "<class 'int'>"
+            },
+            "fourth-second-second": {
+                "_content": 422,
+                "_type": "<class 'int'>"
+            }
+        }
+    }
+}
