@@ -45,6 +45,14 @@ def substitute(input_path, depth, output_path):
         raise exc
 
 
+def check_positive(value):
+    ivalue = int(value)
+    if ivalue <= 0:
+        raise argparse.ArgumentTypeError(f'{value} is an invalid positive \
+        int value')
+    return ivalue
+
+
 def main(input_path, depth, output_path):
     """The main entry point of the program."""
     substitute(input_path, depth, output_path)
@@ -54,7 +62,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("input_path", type=str,
                         help="Path to input json file")
-    parser.add_argument("depth", type=int,
+    parser.add_argument("depth", type=check_positive,
                         help="Depth of substitution to be carried out. \
                         1 --> Only first level substition i.e origianl \
                         dict values will be substituted. \
