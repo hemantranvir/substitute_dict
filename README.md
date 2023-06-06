@@ -27,7 +27,7 @@ $ python3 substitute/substitute.py -h
 - For e.g. running with test input data
 
 ```
-$ python3 substitute/substitute.py ./input.json 3 ./output.json
+$ python3 substitute/substitute.py ./testdata/input.json 3 ./testdata/output.json
 ```
 
 ## Unittests
