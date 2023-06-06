@@ -27,6 +27,8 @@ def substitute(input_path, depth, output_path):
         raise exc
 
     # Recursively call replace_value to replace values matching the criteria
+    # Since dict is mutable, we will use the same input object to update
+    # the values to save on memory
     replace_value(input_data, depth)
 
     # Serializing json

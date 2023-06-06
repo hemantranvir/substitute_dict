@@ -80,6 +80,18 @@ $ make help
   $ pip3 install flake8
 ```
 
+## Documentation
+
+- The project is supplied with docstrings in python functions/files
+- So it's convenient to create web documentation using tools like autosummary, autodoc, sphinx etc.
+- Also we can view the documentation using python interpreter, please see:
+
+```
+$ python3
+>>> from substitute import substitute
+>>> help(substitute)
+```
+
 ## Release instructions
 
 - We will use poetry python module to manage dependencies (no dependencies for now) and build/distribution of our package, due to it's ease of use and rich features
