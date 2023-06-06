@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "superduperdb-testtask"
+name = "substitute"
 version = "0.1.0"
 description = ""
 authors = ["Hemant Ranvir <hemantranvir@gmail.com>"]
