@@ -1,8 +1,10 @@
 # substitute function/script
 
-## Problem statement:
+## Introduction:
+- A python function which accepts a dictionary as input and returns a dictionary as output
+- The output dictionary is a modified version of the input dictionary. For every key-value pair in the input, then, if the value is not a dictionary, it replaces the value (old_value) with {'_content': old_value, '_type': str(type(old_value))}. If the value is a dictionary, then we perform the same substitution on that value, etc..
+- The function should optionally accepts a parameter specifiying to which depth this substitution should proceed (how many iterations into the sub-dictionaries etc.).
 
-- Please refer: https://docs.google.com/document/d/1-yGXfDcEeOYhQwtyW9Avoqh_ko7lptp0s2wBLpFfhyE/
 
 ## Setup
 
